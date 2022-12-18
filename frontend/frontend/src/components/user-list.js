@@ -4,7 +4,6 @@ import axios from 'axios'
 function Userlist() {
   const [userData, setUserData] = useState(null)
 
-
   const fetchUserData = async () => {
     const resp = await axios.get("/getUsers")
     console.log(resp)
@@ -15,7 +14,7 @@ function Userlist() {
     }
   };
 
-  
+
   useEffect(()=>{
     fetchUserData();
   }, [userData]);
