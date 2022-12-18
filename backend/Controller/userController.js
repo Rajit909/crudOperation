@@ -14,6 +14,7 @@ exports.createUser =async (req,res) => {
         if(userExits){
             throw new Error("Email Already Exits")
         }
+        
         //inserting into the database
         const user = await User.create({name, email})
         res.status(201).json({
