@@ -8,7 +8,6 @@ function Form() {
   const [userEmail, setUserEmail] = useState("")
   console.log(userName, userEmail);
 
-  
   //function to send the data
   const submitData = async ()=>{
     const data = {
