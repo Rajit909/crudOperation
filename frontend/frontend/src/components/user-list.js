@@ -41,7 +41,6 @@ function Userlist() {
     console.log(resp);
   };
 
-
   return (
     <>
     <div>Userlist</div>
