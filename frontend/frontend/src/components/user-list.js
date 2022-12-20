@@ -14,7 +14,6 @@ function Userlist() {
     }
   };
 
-
   useEffect(()=>{
     fetchUserData();
   }, [userData]);
