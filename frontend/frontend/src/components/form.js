@@ -18,6 +18,7 @@ function Form() {
     console.log(res)
   }
 
+  
   //To handle the default
   const handleSubmit = (event)=>{
     event.preventDefault();
