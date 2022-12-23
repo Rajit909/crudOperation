@@ -39,6 +39,7 @@ function Userlist() {
     const resp = await axios.delete(`/deleteUser ${userId}`)
     console.log(resp);
   };
+  
   return (
     <>
     <div>Userlist</div>
