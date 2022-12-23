@@ -23,7 +23,6 @@ function Userlist() {
     const userName = prompt(("Enter your New Name"))
     const userEmail = prompt(("Enter your New email"))
 
-
     if(!userName || !userEmail){
       alert("Please enter Name and Email Both")
     }else{
