@@ -12,12 +12,12 @@ const userSchema = new mongoose.Schema({
         unique:true,
         require:[true, "Email is required"]
     },
-    // password:{
-    //     type:String
-    // },
-    // token:{
-    //     type:String
-    // }
+    password:{
+        type:String
+    },
+    token:{
+        type:String
+    }
 
 })
 
