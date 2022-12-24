@@ -4,6 +4,7 @@ exports.home = (req,res)=>{
     res.send("hiiiiiii")
 };
 
+
 exports.createUser =async (req,res) => {
     try{
         const {name , email } = req.body;
