@@ -44,7 +44,6 @@ exports.getUsers = async (req, res)=>{
     }
 }
 
-
 exports.editUser = async (req,res)=>{
     try{
         const user = await User.findByIdAndUpdate(req.params.id, req.body)
@@ -61,7 +60,6 @@ exports.editUser = async (req,res)=>{
         })
     }
 }
-
 
 exports.deleteUser = async (req, res)=>{
     try{
