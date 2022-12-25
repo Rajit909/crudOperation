@@ -18,7 +18,6 @@ const userSchema = new mongoose.Schema({
     token:{
         type:String
     }
-
 })
 
 module.exports = mongoose.model('User' , userSchema)
