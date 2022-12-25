@@ -1,4 +1,3 @@
-// Url Path
 const express = require("express")
 
 const {
@@ -9,6 +8,7 @@ const {
     deleteUser
 } = require("../Controller/userController");
 const router = express.Router();
+
 
 router.get("/",home)
 router.post("/createUser",createUser)
