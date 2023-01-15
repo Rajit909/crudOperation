@@ -2,7 +2,7 @@ import React, {  useState } from 'react'
 import axios from 'axios'
 
 
-function Form() {
+export const Form = () => {
   //TO store the value from Frontend
   const [userName, setUserName] = useState("")
   const [userEmail, setUserEmail] = useState("")
@@ -14,20 +14,20 @@ function Form() {
       name:userName,
       email:userEmail
     };
-    const res = await axios.post("/createUser",data)
-    console.log(res)
+    const res = await axios.post("/createUser", data)
+    console.log(res);
   }
 
   
   //To handle the default
-  const handleSubmit = (event)=>{
+  const handleSubmit = (event) => {
     event.preventDefault();
     //To submit the Data
     submitData();
     // But Empty the previous Details
     setUserName("")
     setUserEmail("")
-  }
+  };
 
   return (
     <>
@@ -65,9 +65,6 @@ function Form() {
                     <label
                       htmlFor="email"
                       className="leading-7 text-sm text-gray-600"
-                      value={userEmail}
-                      onChange={(event)=> setUserEmail(event.target.value)}
-
                     >
                       Email
                     </label>
@@ -98,5 +95,3 @@ function Form() {
     </>
   )
 }
-
-export default Form

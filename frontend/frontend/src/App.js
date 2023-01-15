@@ -1,13 +1,13 @@
 import './App.css';
-import Form from './components/form';
-import Userlist from './components/user-list';
+import {Form} from './components/form';
+import { UserList } from './components/user-list';
 
 function App() {
   return (
-    <>
+    <div>
     <Form/>
-    <Userlist/>
-    </>
+    <UserList/>
+    </div>
   );
 }
 export default App;
