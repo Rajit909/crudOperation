@@ -1,7 +1,7 @@
 require("dotenv").config()
 const express = require("express")
 const connectToDB = require("./config/database")
-const userRoutes = require("./routes/userRoute")
+const userRoutes = require("./routes/userRoutes")
 const app = express()
 
 //Middleware
